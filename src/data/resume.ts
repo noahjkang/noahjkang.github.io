@@ -3,7 +3,6 @@ export const resumeData = {
     {
       institution: "University of Illinois Urbana-Champaign",
       degree: "Bachelor of Science, Mathematics and Computer Science",
-      honors: "James Scholar Honors",
       period: "Aug 2025 - May 2029",
       coursework: [
         "Computer Architecture",
@@ -24,42 +23,57 @@ export const resumeData = {
   },
   experience: [
     {
+      role: "Incoming Software Engineering Intern",
+      company: "Salesforce",
+      location: "San Francisco, California",
+      period: "Summer 2027",
+      bullets: [
+      ],
+    },
+    {
+      role: "Machine Learning Engineering Intern",
+      company: "US Department of Energy",
+      location: "Washington D.C (REMOTE)",
+      period: "Jul 2026 - Present",
+      bullets: [
+        "Building an automated data validation pipeline to process and analyze multi-scenario National Energy Modeling System (NEMS) outputs, replacing manual Excel comparisons for complex energy economic models.",
+        "Implementing statistical anomaly detection and ML models to identify model discrepancies, isolate potential software bugs, and validate research hypotheses across varying simulation parameters.",
+        "Integrating LLMs and agentic AI workflows to auto-generate diagnostic summaries and analytical reports, drastically reducing triage time for anomalous model outputs.",
+      ],
+    },
+    {
       role: "Software Development Intern",
       company: "UIUC Department of Economics",
       location: "Champaign, Illinois",
       period: "Jan 2026 - Present",
       bullets: [
-        "Designing a scalable, full-stack pipeline to generate and store a large-scale relational database, ensuring high performance and architectural reliability aligned with enterprise guidelines.",
-        "Developing asynchronous programming tools and REST APIs to streamline validation, improving throughput and operational efficiency for thousands of concurrent users.",
-        "Creating detailed documentation and technical reference guides to support team collaboration and maintain strict quality standards.",
-        "Communicating effectively with stakeholders and utilizing Python and Google Workspace to manage data flow and prioritize project deadlines.",
+        "Designed a multi-agent generation pipeline with LangGraph state machines to orchestrate complex agent workflows for automated math content creation.",
+        "Integrated SymPy to programmatically generate and verify mathematical expressions, ensuring exact symbolic computation and error-free problem generation.",
+        "Implementing a Retrieval-Augmented Generation architecture to dynamically pull curriculum standards and reference materials into the generation loop for grounded outputs.",
       ],
     },
   ],
   projects: [
     {
+      name: "Cookie Trading",
+      technologies: ["Python", "FastAPI", "Next.js", "React"],
+      bullets: [
+        "A full-stack algorithmic trading platform and simulation engine featuring custom order book matching, real-time WebSockets, and automated bot trading.",
+      ],
+    },
+    {
+      name: "Geodesic",
+      technologies: ["Python", "HNSW", "Celery/Redis", "TypeScript"],
+      bullets: [
+        "A music discovery web application leveraging Topological Data Analysis (TDA), HNSW vector similarity search, and interactive 3D WebGL manifold visualization for high-dimensional audio embeddings.",
+      ],
+    },
+    {
       name: "Computer Vision Waste Classifier",
       technologies: ["Python", "TensorFlow", "FastAPI", "REST Web Services"],
       bullets: [
-        "Developed a classification system, designing REST APIs for low-latency, asynchronous responses and robust backend performance.",
-        "Created clear technical specifications and dockerized the application for scalable, consistent deployment across environments.",
+        "Developed a classification system, designing REST APIs for low-latency, asynchronous responses and robust backend performance."
       ],
     },
-    // {
-    //   name: "Minimax Chess Engine",
-    //   technologies: ["C++", "Node.js", "TypeScript", "JSON"],
-    //   bullets: [
-    //     "Implemented complex algorithms to optimize execution speed, utilizing multi-threaded logic for intensive computational loads.",
-    //     "Applied rigorous debugging and testing methodologies to ensure system stability during complex state transitions.",
-    //   ],
-    // },
-    // {
-    //   name: "Conway’s Game of Life Simulation",
-    //   technologies: ["React", "TypeScript", "Tailwind CSS"],
-    //   bullets: [
-    //     "Built a highly scalable simulation engine utilizing Git/GitHub for version control.",
-    //     "Designed an intuitive UI with React, integrating real-time analytics and variable simulation speeds.",
-    //   ],
-    // },
   ],
 };
