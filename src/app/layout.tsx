@@ -26,13 +26,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black scroll-smooth`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black scroll-smooth dark`}
     >
       <body className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)] selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black">
-        <ClientNavBar />
+        {/* <ClientNavBar /> */}
         {/* We'll put a subtle background pattern here if desired, otherwise keep it clean */}
-        <div className="flex-1 w-full flex flex-col items-center justify-start pt-24">
-          <div className="w-full max-w-4xl px-6 py-12 md:py-20 flex flex-col gap-12">
+        <div className="flex-1 w-full flex flex-col justify-start pt-24">
+          <div className="w-full flex flex-col">
             {children}
           </div>
         </div>
