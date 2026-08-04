@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Digital Portfolio",
+  title: "Noah Kang",
   description: "A digital portfolio and resume",
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)] selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black">
         {/* <ClientNavBar /> */}
         {/* We'll put a subtle background pattern here if desired, otherwise keep it clean */}
-        <div className="flex-1 w-full flex flex-col justify-start pt-24">
+        <div className="flex-1 w-full flex flex-col justify-start">
           <div className="w-full flex flex-col">
             {children}
           </div>

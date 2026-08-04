@@ -8,14 +8,14 @@ function HeroSplineBackground() {
     <div style={{
       position: 'relative',
       width: '100%',
-      height: '100vh',
+      height: '50vh',
       pointerEvents: 'auto',
       overflow: 'hidden',
     }}>
       <Spline
         style={{
           width: '100%',
-          height: '100vh',
+          height: '50vh',
           pointerEvents: 'auto',
         }}
         scene="https://prod.spline.design/dJqTIQ-tE3ULUPMi/scene.splinecode"
@@ -26,7 +26,7 @@ function HeroSplineBackground() {
           top: 0,
           left: 0,
           width: '100%',
-          height: '100vh',
+          height: '50vh',
           background: `
             linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.8)),
             linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.9))
@@ -58,26 +58,13 @@ function HeroContent() {
 function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-20" style={{ backgroundColor: 'rgba(13, 13, 24, 0.3)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', borderRadius: '0 0 0.75rem 0.75rem' }}>
-      <div className="container mx-auto px-4 py-4 md:px-6 lg:px-8 flex items-center justify-between">
-        <div className="flex items-center space-x-6 lg:space-x-8">
-          <div className="text-white" style={{ width: '32px', height: '32px' }}>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fillRule="evenodd" clipRule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM12.4306 9.70695C12.742 9.33317 13.2633 9.30058 13.6052 9.62118L19.1798 14.8165C19.4894 15.1054 19.4894 15.5841 19.1798 15.873L13.6052 21.0683C13.2633 21.3889 12.742 21.3563 12.4306 19.9991V9.70695Z" fill="currentColor" />
-            </svg>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-gray-300 hover:text-white text-sm transition duration-150">Home</a>
-            <a href="#" className="text-gray-300 hover:text-white text-sm transition duration-150">Cases</a>
-            <a href="#" className="text-gray-300 hover:text-white text-sm transition duration-150">Library</a>
-            <a href="#" className="text-gray-300 hover:text-white text-sm transition duration-150">Resources</a>
-          </div>
-        </div>
-
-        <div className="flex items-center">
-          <a href="#" className="border border-white text-white px-5 py-2 rounded-full text-sm hover:bg-white hover:text-black transition duration-300">
-            Let's Talk!
-          </a>
+      <div className="max-w-screen-xl mx-auto px-4 w-full py-4 flex items-center justify-start">
+        <div className="hidden md:flex items-center space-x-6">
+          <a href="/bio" className="text-gray-300 hover:text-white text-sm transition duration-150">Bio</a>
+          <a href="#experience" className="text-gray-300 hover:text-white text-sm transition duration-150">Work Experience</a>
+          <a href="#projects" className="text-gray-300 hover:text-white text-sm transition duration-150">Projects</a>
+          <a href="#education" className="text-gray-300 hover:text-white text-sm transition duration-150">Education</a>
+          <a href="/contact" className="text-gray-300 hover:text-white text-sm transition duration-150">Contact</a>
         </div>
       </div>
     </nav>
@@ -108,13 +95,13 @@ const HeroSection = ({ children }: { children: React.ReactNode }) => {
     <div className="relative w-full">
       <Navbar />
 
-      <div className="relative min-h-screen">
+      <div className="relative min-h-[50vh]">
         <div className="absolute inset-0 z-0 pointer-events-auto">
           <HeroSplineBackground />
         </div>
 
         <div ref={heroContentRef} style={{
-          position: 'absolute', top: 0, left: 0, width: '100%', height: '100vh',
+          position: 'absolute', top: 0, left: 0, width: '100%', height: '50vh',
           display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 10, pointerEvents: 'none'
         }}>
           <HeroContent />
