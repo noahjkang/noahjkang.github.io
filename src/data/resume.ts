@@ -1,4 +1,18 @@
-export const resumeData = {
+export interface Education {
+  institution: string;
+  degree: string;
+  period: string;
+  currentCoursework: string[];
+  completedCoursework: string[];
+  honors?: string;
+}
+
+export const resumeData: {
+  education: Education[];
+  skills: any;
+  experience: any[];
+  projects: any[];
+} = {
   education: [
     {
       institution: "University of Illinois Urbana-Champaign",
