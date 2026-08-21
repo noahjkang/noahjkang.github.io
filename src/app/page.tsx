@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import EducationSection from "@/components/EducationSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectSection from "@/components/ProjectSection";
@@ -67,6 +68,15 @@ export default function Home() {
         {/* Left Side: Fixed */}
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[35%] lg:flex-col lg:justify-between lg:py-24">
           <div>
+            <div className="mb-6">
+              <Image 
+                src="/profile.jpeg" 
+                alt="Noah Kang" 
+                width={128} 
+                height={128} 
+                className="w-40 h-40 rounded-full border-2 border-white/20 object-cover" 
+              />
+            </div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               <a href="/">Noah Kang</a>
             </h1>
@@ -149,15 +159,15 @@ export default function Home() {
             </div>
             <div>
               <p className="mb-4 text-[var(--text-muted)] text-lg leading-relaxed">
-                I am a passionate computer science and mathematics student at the University of Illinois Urbana-Champaign. 
-                My focus lies in building robust software architectures and tackling complex algorithmic challenges. 
-                With a deep interest in both theoretical foundations and practical applications, I enjoy developing 
-                solutions that are both elegant and highly performant.
+                I am a sophomore at the University of Illinois Urbana-Champaign pursuing a bachelors in Mathematics and Computer Science. 
+                I'm focused on pure math (analysis + algebra) and (operating) systems. I would like to pursue graduate school in algebraic 
+                topology though I love the feeling of building that comes with coding.
               </p>
               <p className="mb-4 text-[var(--text-muted)] text-lg leading-relaxed">
-                Over the years, I've worked on various projects spanning web development, data analysis, and distributed systems.
-                When I'm not coding, you'll usually find me exploring new technologies, contributing to open-source, or discussing
-                the latest advancements in tech and AI.
+                I love going to booksales, and if you walk into my room, I may be reading AC Grayling's Philosophy 1: A Guide Through the Subject. 
+                I'd tell you that I find epistemology incredibly dry but essential and aesthetics interesting but mildly trivial. 
+                Two years ago I would have been grinding Phantom Forces, and four years ago I'd have been building Tamiya's plastic 
+                tank models.
               </p>
             </div>
           </section>
