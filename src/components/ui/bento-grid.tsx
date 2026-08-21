@@ -99,15 +99,7 @@ function BentoGrid({ items = itemsSample }: BentoGridProps) {
                             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-black/5 dark:bg-white/10 group-hover:bg-gradient-to-br transition-all duration-300">
                                 {item.icon}
                             </div>
-                            <span
-                                className={cn(
-                                    "text-xs font-medium px-2 py-1 rounded-lg backdrop-blur-sm",
-                                    "bg-black/5 dark:bg-white/10 text-gray-600 dark:text-gray-300",
-                                    "transition-colors duration-300 group-hover:bg-black/10 dark:group-hover:bg-white/20"
-                                )}
-                            >
-                                {item.status || "Active"}
-                            </span>
+
                         </div>
 
                         <div className="space-y-2">
@@ -133,9 +125,7 @@ function BentoGrid({ items = itemsSample }: BentoGridProps) {
                                     </span>
                                 ))}
                             </div>
-                            <span className="text-xs text-gray-500 dark:text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                                {item.cta || "Explore →"}
-                            </span>
+
                         </div>
                     </div>
 
