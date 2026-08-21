@@ -4,15 +4,20 @@ export const resumeData = {
       institution: "University of Illinois Urbana-Champaign",
       degree: "Bachelor of Science, Mathematics and Computer Science",
       period: "Aug 2025 - May 2029",
-      coursework: [
+      currentCoursework: [
+        "Abstract Algera",
+        "Complex Analysis",
+        "System Programming",
+        "Distributed Systems",
+      ],
+      completedCoursework: [
+        "Real Analysis",
+        "Abstract Linear Algebra",
+        "Ordinary Differential Equations",
         "Computer Architecture",
         "Data Structures",
-        "Discrete Structures",
         "C++ Programming",
         "Java Programming",
-        "Ordinary Differential Equations",
-        "Abstract Linear Algebra",
-        "Real Analysis",
       ],
     },
   ],
@@ -28,6 +33,15 @@ export const resumeData = {
       location: "San Francisco, California",
       period: "Summer 2027",
       bullets: [
+      ],
+    },
+    {
+      role: "Undergraduate Researcher",
+      company: "Illinois Mathematics Lab",
+      location: "Champaign, Illinois",
+      period: "Aug 2026 - Present",
+      bullets: [
+        "Studying the existence and asymptotics of symmetric higher-dimensional Ricci solitons by reducing the geometric flow equations to systems of non-linear ODEs.",
       ],
     },
     {
