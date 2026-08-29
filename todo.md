@@ -1,8 +1,0 @@
--light/dark theme
--fix taskbar
--add experiences
--edit hero/landing
--custom cursor
--hover animations
--contact info+resume
--update info
