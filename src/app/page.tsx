@@ -121,7 +121,7 @@ export default function Home() {
             <li className="mr-5 text-xs shrink-0">
               <a
                 className="block hover:text-white transition-colors"
-                href="https://github.com/noah-j-kang"
+                href="https://github.com/noahjkang"
                 target="_blank"
                 rel="noreferrer"
                 title="GitHub"
