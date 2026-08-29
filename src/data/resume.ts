@@ -7,11 +7,25 @@ export interface Education {
   honors?: string;
 }
 
+export interface Experience {
+  role: string;
+  company: string;
+  location: string;
+  period: string;
+  bullets: string[];
+}
+
+export interface Project {
+  name: string;
+  technologies: string[];
+  bullets: string[];
+}
+
 export const resumeData: {
   education: Education[];
   skills: any;
-  experience: any[];
-  projects: any[];
+  experience: Experience[];
+  projects: Project[];
 } = {
   education: [
     {
