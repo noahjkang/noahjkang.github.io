@@ -73,11 +73,20 @@ export const resumeData: {
       role: "Software Development Intern",
       company: "UIUC Department of Economics",
       location: "Champaign, Illinois",
-      period: "Jan 2026 - Present",
+      period: "Jan 2026 - Aug 2026",
       bullets: [
         "Designed a multi-agent generation pipeline with LangGraph state machines to orchestrate complex agent workflows for automated math content creation.",
         "Integrated SymPy to programmatically generate and verify mathematical expressions, ensuring exact symbolic computation and error-free problem generation.",
         "Implementing a Retrieval-Augmented Generation architecture to dynamically pull curriculum standards and reference materials into the generation loop for grounded outputs.",
+      ],
+    },
+    {
+      role: "Assistant Sashimi Chef",
+      company: "Tensuke",
+      location: "Elk Grove Village, Illinois",
+      period: "Jun 2026 - Jul 2026",
+      bullets: [
+        "Scaled, filleted, and displayed fish, received orders of fresh fish, and prepared sashimi",
       ],
     },
   ],
